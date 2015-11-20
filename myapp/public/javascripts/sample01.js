@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(e) {
-    console.log("DOM fully loaded and parsed", (new Date).getTime());
+    console.log("DOMContentLoaded: DOM fully loaded and parsed", (new Date).getTime());
 });
 
 
