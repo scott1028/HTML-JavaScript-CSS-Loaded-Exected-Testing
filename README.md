@@ -26,3 +26,8 @@ $ npm start
 - 如果要確保都在 Complete 後才執行請加到 $(document).ready 後就可以確保該 Callback 會在之後才執行！
 
 ![Alt text](https://raw.githubusercontent.com/scott1028/HTML-JavaScript-CSS-Loaded-Exected-Testing/master/sample01.jpg "Sample01 View")
+
+# Reference
+
+- http://jade-lang.com/reference/includes/
+- http://stackoverflow.com/questions/5858218/how-can-i-render-inline-javascript-with-jade
