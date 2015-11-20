@@ -21,4 +21,20 @@ router.get('/sample01.css', function(req, res, next) {
     }, 3000);
 });
 
+router.get('/sample01.jpg', function(req, res, next) {
+    res.set({
+        'Content-Type': 'image/jpeg'
+    });
+
+    var fs = require('fs');
+    var obj;
+    setTimeout(function(){
+        console.log('respond with a Image file!');
+        fs.readFile('./routes/sample01.jpg', function (err, data) {
+            console.log(data, err);
+            res.send(data);
+        });
+    }, 2000);
+});
+
 module.exports = router;
