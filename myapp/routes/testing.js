@@ -37,4 +37,14 @@ router.get('/sample01.jpg', function(req, res, next) {
     }, 2000);
 });
 
+router.get('/streaming', function(req, res, next) {
+    res.set({
+        'Content-Type': 'text/event-stream'
+    });
+
+    setInterval(function(){
+        res.write((new Date).toJSON() + "\n");
+    }, 1000);
+});
+
 module.exports = router;
